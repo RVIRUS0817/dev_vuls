@@ -91,8 +91,8 @@ enjoy contribute!!🤩
 ## When docker run
 
 ```
-$ docker run -h "dev_vuls" -e TZ=Asia/Tokyo --privileged -d --name dev_vuls tvirus17/vuls_centos7 /sbin/init
-$ docker exec -it vuls_centos7 bash
+$ docker run -h "dev_vuls" -e TZ=Asia/Tokyo --privileged -d --name dev_vuls tvirus17/dev_vuls /sbin/init
+$ docker exec -it dev_vuls bash
 ```
 
 ## When update Vuls
