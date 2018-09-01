@@ -102,6 +102,14 @@ $ docker run -h "dev_vuls" -e TZ=Asia/Tokyo --privileged -d --name dev_vuls tvir
 $ docker exec -it dev_vuls bash
 ```
 
+## Vuls command
+```
+$ cd ~/vuls
+$ goval-dictionary fetch-redhat 5 6 7
+$ vuls scan
+$ vuls report -format-one-line-text -format-json -to-slack -lang=ja -ignore-unfixed -cvss-over=7
+```
+
 ## When update Vuls
 
 ```
@@ -131,12 +139,4 @@ goval-dictionary v0.1.0 818624d
 gost e926a00
 vuls v0.5.0 153234b
 
-```
-
-## Vuls command
-```
-$ cd ~/vuls
-$ goval-dictionary fetch-redhat 5 6 7
-$ vuls scan
-$ vuls report -format-one-line-text -format-json -to-slack -lang=ja -ignore-unfixed -cvss-over=7
 ```
