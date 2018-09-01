@@ -86,6 +86,8 @@ $ vim config.toml
 
 enjoy contribute!!🤩
 
+----
+
 ## When docker run
 
 ```
