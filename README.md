@@ -71,7 +71,7 @@ $ docker exec -it dev_vuls bash
 $ sudo su vuls
 $ cd $GOPATH/src/github.com/knqyf263/gost
 $ make install
-$ cd $GOPATH/src/github.com/vuls
+$ cd $GOPATH/src/github.com/future-architect/vuls
 $ make install
 $ cd $GOPATH/src/github.com/kotakanbe/go-cve-dictionary
 $ make install
