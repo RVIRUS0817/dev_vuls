@@ -9,27 +9,27 @@ I build it with the following my blog.
 ・docker-compose version 1.22.0, build f46880f  
 ・CentOS7(Container)  
 ・go version go1.10.1 linux/amd64  
-・vuls v0.4.2 d785fc2  
-・go-cve-dictionary v0.1.1 c2bcc41  
-・goval-dictionary 0b28496  
-・gost  
+・vuls v0.5.0 153234b    
+・go-cve-dictionary v0.2.0 01c5660  
+・goval-dictionary v0.1.0 818624d  
+・gost e926a00  
 
 ## Setting File mount
 
 ・local PC  
 ```
-$ mkdir -p ~/www/future-architect/
-$ mkdir -p ~/www/knqyf263/
-$ mkdir -p ~/www/kotakanbe/
+$ mkdir -p ~/www/future-architect/
+$ mkdir -p ~/www/knqyf263/
+$ mkdir -p ~/www/kotakanbe/
 ```
 
 ・fork repository vuls,go-cve-dictionary,goval-dictionary,gost
 ```
 $ cd ~/www/future-architect/
 $ git clone fork-repository(vuls)
-$ cd ~/www/knqyf263/
+$ cd ~/www/knqyf263/
 $ git clone fork-repository(gost)
-$ cd ~/www/kotakanbe/
+$ cd ~/www/kotakanbe/
 $ git clone fork-repository(go-cve-dictionary,goval-dictionary,gost)
 ```
 
