@@ -2,7 +2,7 @@ version: '3'
 
 services:
   dev_vuls:
-    image: tvirus17/vuls_centos7
+    image: tvirus17/dev_vuls
     tty: true
     hostname: dev_vuls
     container_name: dev_vuls
