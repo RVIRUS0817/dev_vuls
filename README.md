@@ -64,3 +64,10 @@ $ make install
 ```
 
 enjoy contribute!!🤩
+
+## When docker run
+
+```
+$ docker run -h "dev_vuls" -e TZ=Asia/Tokyo --privileged -d --name dev_vuls tvirus17/vuls_centos7 /sbin/init
+$ docker exec -it vuls_centos7 bash
+```
