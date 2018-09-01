@@ -136,6 +136,7 @@ vuls v0.5.0 153234b
 ## Vuls command
 ```
 $ cd ~/vuls
+$ goval-dictionary fetch-redhat 5 6 7
 $ vuls scan
 $ vuls report -format-one-line-text -format-json -to-slack -lang=ja -ignore-unfixed -cvss-over=7
 ```
