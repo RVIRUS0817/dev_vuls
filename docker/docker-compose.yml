@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  dev_vuls:
+    image: tvirus17/vuls_centos7
+    tty: true
+    hostname: dev_vuls
+    container_name: dev_vuls
+    restart: always
+    volumes:
+      - ~/www/future-architect/vuls:/home/vuls/go/src/github.com/future-architect/vuls
+      - ~/www/kotakanbe/go-cve-dictionary:/home/vuls/go/src/github.com/kotakanbe/go-cve-dictionary
+      - ~/www/kotakanbe/goval-dictionary:/home/vuls/go/src/github.com/kotakanbe/goval-dictionary
+      - ~/www/knqyf263/gost:/home/vuls/go/src/github.com/knqyf263/gost
