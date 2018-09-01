@@ -7,7 +7,7 @@ I build it with the following my blog.
 
 ## Environment
 ・docker-compose version 1.22.0, build f46880f  
-・CentOS7(Container)  
+・CentOS7(Container)/https://hub.docker.com/r/tvirus17/dev_vuls/  
 ・go version go1.10.1 linux/amd64  
 ・vuls v0.5.0 153234b    
 ・go-cve-dictionary v0.2.0 01c5660  
