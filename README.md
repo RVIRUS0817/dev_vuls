@@ -63,9 +63,10 @@ $ cd docker
 $ docker-compose up -d
 ```
 
-・ docker-compose down  
+・ docker-compose stop/down  
 ```
 $ cd docker
+$ docker-compose stop
 $ docker-compose down
 ```
 
