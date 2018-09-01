@@ -2,8 +2,15 @@
 
 ![vuls_banner__2](https://user-images.githubusercontent.com/5633085/44946049-49397b80-ae2f-11e8-83a1-80c81dd708a8.png)
 
-Vuls is a local development docker.   
-I build it with the following my blog.
+dev_vuls is a local development environment.  
+
+## important point
+
+· Person who wants to contribute  
+Be sure to refer to the following Deploy container. (Because file is mounted)  
+
+· Person who wants to touch Vuls itself  
+Please look at the following When docker run and execute it.  
 
 ## Environment
 ・docker-compose version 1.22.0, build f46880f  
