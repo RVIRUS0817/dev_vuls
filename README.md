@@ -22,9 +22,10 @@ Please look at the following [When docker run](https://github.com/RVIRUS0817/dev
 ・gost e926a00  
 
 ## Vuls setting files
+
 ```
 [root@dev_vuls > su vuls
-[root@dev_vuls > cd ~/vuls
+[vuls@dev_vuls > cd ~/vuls
 [vuls@dev_vuls > ll
 total 1232068
 -rw-rw-r-- 1 vuls vuls        481 Sep  1 22:56 config.toml
@@ -35,9 +36,9 @@ drwx------ 4 vuls vuls       4096 Sep  1 22:53 results/
 -rwxr-xr-x 1 vuls vuls       1648 Sep  1 21:45 vuls-update.sh*
 ```
 
-## Setting File mount
+## Setting File mount(Local PC)
 
-・local PC  
+・make home directory
 ```
 $ mkdir -p ~/www/future-architect/
 $ mkdir -p ~/www/knqyf263/
@@ -45,13 +46,20 @@ $ mkdir -p ~/www/kotakanbe/
 ```
 
 ・fork repository vuls,go-cve-dictionary,goval-dictionary,gost
+
+https://vuls.io/docs/ja/install-manually-centos.html
+
+
+Let's git clone the Forked repository (I want to contribute). Otherwise git clone from the official repository.
+
 ```
 $ cd ~/www/future-architect/
 $ git clone fork-repository(vuls)
 $ cd ~/www/knqyf263/
-$ git clone fork-repository(gost)
+$ git clone https://github.com/knqyf263/gost.git
 $ cd ~/www/kotakanbe/
-$ git clone fork-repository(go-cve-dictionary,goval-dictionary,gost)
+$ git clone https://github.com/kotakanbe/go-cve-dictionary.git
+$ git clone https://github.com/kotakanbe/goval-dictionary.git
 ```
 
 ## How to use docker-compose
