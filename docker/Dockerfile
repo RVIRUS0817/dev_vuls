@@ -17,9 +17,9 @@ RUN yum -y install \
 RUN ln -sf /usr/share/zoneinfo/Japan /etc/localtime
 
 RUN wget https://dl.google.com/go/go1.10.1.linux-amd64.tar.gz 
-         sudo tar -C /usr/local -xzf go1.10.1.linux-amd64.tar.gz 
-         rm -rf go1.10.1.linux-amd64.tar.gz 
-         mkdir $HOME/go
+RUN sudo tar -C /usr/local -xzf go1.10.1.linux-amd64.tar.gz 
+RUN rm -rf go1.10.1.linux-amd64.tar.gz 
+RUN mkdir $HOME/go
 
 
 CMD ["/bin/bash"]
