@@ -21,5 +21,12 @@ RUN sudo tar -C /usr/local -xzf go1.10.1.linux-amd64.tar.gz
 RUN rm -rf go1.10.1.linux-amd64.tar.gz 
 RUN mkdir $HOME/go
 
+ADD goenv.sh /etc/profile.d/
+RUN chmod +x /etc/profile.d/goenv.sh 
+RUN source /etc/profile.d/goenv.sh
+
+RUN source /etc/profile.d/goenv.sh
+
+
 
 CMD ["/bin/bash"]
