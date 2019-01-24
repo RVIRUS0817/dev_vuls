@@ -12,3 +12,4 @@ services:
       - ~/www/kotakanbe/go-cve-dictionary:/home/vuls/go/src/github.com/kotakanbe/go-cve-dictionary
       - ~/www/kotakanbe/goval-dictionary:/home/vuls/go/src/github.com/kotakanbe/goval-dictionary
       - ~/www/knqyf263/gost:/home/vuls/go/src/github.com/knqyf263/gost
+      - ~/www/mozqnet/go-exploitdb:/home/vuls/go/src/github.com/mozqnet/go-exploitdb
