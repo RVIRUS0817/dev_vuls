@@ -16,24 +16,28 @@ Please look at the following [When docker run](https://github.com/RVIRUS0817/dev
 ・docker-compose version 1.22.0, build f46880f  
 ・[CentOS7(Container)](https://hub.docker.com/r/tvirus17/dev_vuls/)  
 ・go version go1.10.1 linux/amd64  
-・vuls v0.5.0 153234b    
-・go-cve-dictionary v0.2.0 01c5660  
-・goval-dictionary v0.1.0 818624d  
-・gost e926a00  
+・vuls v0.6.2     
+・go-cve-dictionary v0.3.1 b083bed  
+・goval-dictionary v0.1.1 5070051  
+・gost 5afeda5  
+・go-exploitdb  
 
 ## Vuls setting files
 
 ```
 [root@dev_vuls > su vuls
 [vuls@dev_vuls > cd ~/vuls
-[vuls@dev_vuls > ll
-total 1232068
--rw-rw-r-- 1 vuls vuls        481 Sep  1 22:56 config.toml
+[~/vuls]
+vuls@dev_vuls > ll
+total 1248748
+-rw-rw-r-- 1 vuls vuls        447 Jan 24 09:21 config.toml
 -rw-r--r-- 1 vuls vuls 1153449984 Sep  1 22:55 cve.sqlite3
--rw-r--r-- 1 vuls vuls   12070912 Sep  1 21:59 gost.sqlite3
--rw-r--r-- 1 vuls vuls   96100352 Sep  1 22:55 oval.sqlite3
-drwx------ 4 vuls vuls       4096 Sep  1 22:53 results/
+-rw-r--r-- 1 vuls vuls   16322560 Jan 24 00:40 go-exploitdb.sqlite3
+-rw-r--r-- 1 vuls vuls   12148736 Jan 24 09:17 gost.sqlite3
+-rw-r--r-- 1 vuls vuls   96776192 Jan 24 09:22 oval.sqlite3
+drwx------ 4 vuls vuls       4096 Jan 24 09:22 results/
 -rwxr-xr-x 1 vuls vuls       1648 Sep  1 21:45 vuls-update.sh*
+
 ```
 
 ## Setting File mount(Local PC)
@@ -43,6 +47,7 @@ drwx------ 4 vuls vuls       4096 Sep  1 22:53 results/
 $ mkdir -p ~/www/future-architect/
 $ mkdir -p ~/www/knqyf263/
 $ mkdir -p ~/www/kotakanbe/
+$ mkdir -p ~/www/mozqnet//
 ```
 
 ・fork repository vuls,go-cve-dictionary,goval-dictionary,gost
@@ -54,12 +59,14 @@ Let's git clone the Forked repository (I want to contribute). Otherwise git clon
 
 ```
 $ cd ~/www/future-architect/
-$ git clone fork-repository(vuls)
+$ git clone https://github.com/future-architect/vuls.git
 $ cd ~/www/knqyf263/
 $ git clone https://github.com/knqyf263/gost.git
 $ cd ~/www/kotakanbe/
 $ git clone https://github.com/kotakanbe/go-cve-dictionary.git
 $ git clone https://github.com/kotakanbe/goval-dictionary.git
+$ cd ~/www/mozqnet/
+$ git clone https://github.com/mozqnet/go-exploitdb.git
 ```
 
 ## How to use docker-compose
@@ -93,6 +100,8 @@ $ cd $GOPATH/src/github.com/kotakanbe/go-cve-dictionary
 $ make install
 $ cd $GOPATH/src/github.com/kotakanbe/goval-dictionary/
 $ make install
+$ cd $GOPATH/src/github.com/mozqnet/go-exploitdb
+$ make install
 ```
 ・config.toml
 ```
@@ -124,28 +133,4 @@ $ vuls report -format-one-line-text -format-json -to-slack -lang=ja -ignore-unfi
 ```
 $ cd ~/vuls
 $ ./vuls-update.sh
-----Current goval/go-cve-dictionary/gost,Vuls version----
-go-cve-dictionary v0.2.0 01c5660
-goval-dictionary  b8751b9
-gost e926a00
-vuls v0.5.0 153234b
-
-----Update go-cve-dictionary----
-Update OK
-
-----Update goval-dictionary----
-Update OK
-
-----Update gost----
-Update OK
-
-----Update Vuls----
-Update OK
-
-----New goval/go-cve-dictionary,Vuls version----
-go-cve-dictionary v0.2.0 01c5660
-goval-dictionary v0.1.0 818624d
-gost e926a00
-vuls v0.5.0 153234b
-
 ```
