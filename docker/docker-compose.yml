@@ -1,6 +1,4 @@
-version: '3'
 
-services:
   dev_vuls:
     image: tvirus17/dev_vuls
     tty: true
@@ -13,3 +11,29 @@ services:
       - ~/www/kotakanbe/goval-dictionary:/home/vuls/go/src/github.com/kotakanbe/goval-dictionary
       - ~/www/knqyf263/gost:/home/vuls/go/src/github.com/knqyf263/gost
       - ~/www/mozqnet/go-exploitdb:/home/vuls/go/src/github.com/mozqnet/go-exploitdb
+    links:
+      - wordpress
+
+  wordpress:
+    image: wordpress:4.2
+    hostname: wordpress
+    container_name: wordpress
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_PASSWORD: wordpress
+    links:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    hostname: mysql
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
