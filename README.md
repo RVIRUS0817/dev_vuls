@@ -13,16 +13,15 @@ Be sure to refer to the following [Deploy container](https://github.com/RVIRUS08
 Please look at the following [When docker run](https://github.com/RVIRUS0817/dev_vuls#when-docker-run) and execute it.  
 
 ## Environment
-- docker-compose version 1.22.0, build f46880f  
 - [CentOS7(Container)](https://hub.docker.com/r/tvirus17/dev_vuls/)  
-- go version go1.10.1 linux/amd64  
-- vuls v0.6.2     
-- go-cve-dictionary v0.3.1 b083bed  
-- goval-dictionary v0.1.1 5070051  
-- gost 5afeda5  
-- go-exploitdb  
 - wordpress container
 - mysql container
+- go version go1.12.6 linux/amd64  
+- vuls v0.7.0   
+- go-cve-dictionary v0.3.1 5fe5261
+- goval-dictionary v0.1.3 078b163
+- gost 39175c0
+- go-exploitdb  
 
 ## Vuls setting files
 
