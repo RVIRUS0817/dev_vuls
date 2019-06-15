@@ -20,6 +20,7 @@
     container_name: wordpress
     ports:
       - "8000:80"
+      - "22:22"
     restart: always
     environment:
       WORDPRESS_DB_HOST: mysql:3306
