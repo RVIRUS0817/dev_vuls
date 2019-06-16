@@ -16,8 +16,8 @@
 
   wordpress:
     image: tvirus17/dev_wordpress:4.2
-    hostname: wordpress
-    container_name: wordpress
+    hostname: dev_wordpress
+    container_name: dev_wordpress
     ports:
       - "8000:80"
       - "22:22"
