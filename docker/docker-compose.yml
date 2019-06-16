@@ -15,7 +15,7 @@
       - wordpress
 
   wordpress:
-    image: wordpress:4.2
+    image: tvirus17/dev_wordpress:4.2
     hostname: wordpress
     container_name: wordpress
     ports:
