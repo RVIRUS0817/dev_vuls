@@ -109,7 +109,9 @@ $ make install
 $ cd ~/vuls
 $ vim config.toml
 ```
+- wordpress
 
+http://localhost:8000  
 enjoy contribute!!🤩
 
 ----
