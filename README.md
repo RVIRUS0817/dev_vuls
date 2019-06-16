@@ -6,10 +6,10 @@ dev_vuls is a local development environment.
 
 ## important point
 
-· Person who wants to contribute  
+- Person who wants to contribute  
 Be sure to refer to the following [Deploy container](https://github.com/RVIRUS0817/dev_vuls#deploy-container). (Because file is mounted)  
 
-· Person who wants to touch Vuls itself  
+- Person who wants to touch Vuls itself  
 Please look at the following [When docker run](https://github.com/RVIRUS0817/dev_vuls#when-docker-run) and execute it.  
 
 ## Environment
@@ -43,7 +43,7 @@ drwx------ 4 vuls vuls       4096 Jan 24 09:22 results/
 
 ## Setting File mount(Local PC)
 
-・make home directory
+- make home directory
 ```
 $ mkdir -p ~/www/future-architect/
 $ mkdir -p ~/www/knqyf263/
@@ -51,7 +51,7 @@ $ mkdir -p ~/www/kotakanbe/
 $ mkdir -p ~/www/mozqnet//
 ```
 
-・fork repository vuls,go-cve-dictionary,goval-dictionary,gost
+- fork repository vuls,go-cve-dictionary,goval-dictionary,gost
 
 https://vuls.io/docs/ja/install-manually-centos.html
 
@@ -72,14 +72,14 @@ $ git clone https://github.com/mozqnet/go-exploitdb.git
 
 ## How to use docker-compose
 
-・ docker-compose up  
+- docker-compose up  
 ```
 $ this repositry fork
 $ cd docker
 $ docker-compose up -d
 ```
 
-・ docker-compose stop/down  
+- docker-compose stop/down  
 ```
 $ cd docker
 $ docker-compose stop
@@ -88,7 +88,7 @@ $ docker-compose down
 
 ## Deploy container
 
-・Deploy
+- Deploy
 
 ```
 $ docker exec -it dev_vuls bash
@@ -104,7 +104,7 @@ $ make install
 $ cd $GOPATH/src/github.com/future-architect/vuls
 $ make install
 ```
-・config.toml
+- config.toml
 ```
 $ cd ~/vuls
 $ vim config.toml
