@@ -48,7 +48,7 @@ drwx------ 4 vuls vuls       4096 Jan 24 09:22 results/
 $ mkdir -p ~/www/future-architect/
 $ mkdir -p ~/www/knqyf263/
 $ mkdir -p ~/www/kotakanbe/
-$ mkdir -p ~/www/mozqnet//
+$ mkdir -p ~/www/mozqnet/
 ```
 
 - fork repository vuls,go-cve-dictionary,goval-dictionary,gost
